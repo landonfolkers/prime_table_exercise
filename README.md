@@ -1,7 +1,7 @@
 # Create Prime Table App
 
 ## How to run
-    Clone the repository onto your own device. Run `bundle install` to install neeeded dependencies. 
+    Clone the repository onto your own device. Run ```bundle install``` to install neeeded dependencies. 
 
     This is a command line app. To run this app, navigate to the file you cloned and type `ruby app/run_create_prime_table.rb int` where `int` is the number of prime numbers you want the app to display in the table. 
 
