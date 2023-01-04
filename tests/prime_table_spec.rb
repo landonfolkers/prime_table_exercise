@@ -21,4 +21,23 @@ describe PrimeTable do
         end
       end
     end
+  
+    describe "create_table function" do
+
+    context 'when a user inputs int 8 ' do
+        it 'prints a 2 x 2 table' do
+            expect do
+                @prime_table.create_table(2)
+                end.to output("      2    3   \n\n2  |  4    6   \n\n3  |  6    9   \n\n").to_stdout
+        end
+    end
+  
+      context 'when a user inputs int 4' do
+        it 'prints a 4 x 4 table' do
+          expect do
+            @prime_table.create_table(4)
+          end.to output("      2    3    5    7   \n\n2  |  4    6    10   14  \n\n3  |  6    9    15   21  \n\n5  |  10   15   25   35  \n\n7  |  14   21   35   49  \n\n").to_stdout
+        end
+      end
+    end
   end
