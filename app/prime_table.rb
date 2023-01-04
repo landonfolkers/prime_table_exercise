@@ -33,5 +33,3 @@ class PrimeTable
       primes.compact.first(number)
     end
 end
-
-PrimeTable.new.create_table(ARGV[0].to_i)
