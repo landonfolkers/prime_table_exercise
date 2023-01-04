@@ -39,5 +39,14 @@ describe PrimeTable do
           end.to output("      2    3    5    7   \n\n2  |  4    6    10   14  \n\n3  |  6    9    15   21  \n\n5  |  10   15   25   35  \n\n7  |  14   21   35   49  \n\n").to_stdout
         end
       end
+
+
+      context 'when a user inputs int -2 ' do
+        it 'prints a warning message' do
+            expect do
+                @prime_table.create_table(-2)
+                end.to output("Please enter a positive integer").to_stdout
+        end
+      end
     end
   end
