@@ -2,6 +2,7 @@ class PrimeTable
     def create_table(number)
         prime_numbers = get_primes(number)
         p prime_numbers
+
     end
 
     def get_primes(number)
@@ -24,4 +25,4 @@ class PrimeTable
     end
 end
 
-PrimeTable.new.create_table(7)
+PrimeTable.new.create_table(ARGV[0].to_i)
