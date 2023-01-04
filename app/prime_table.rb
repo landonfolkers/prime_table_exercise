@@ -11,9 +11,13 @@ class PrimeTable
         primes[i] = i
       end
       for i in 2 .. Math.sqrt(limit)
-        next unless primes[i]
-          (i*i).step(limit, i) do |j|
+        if primes.compact.first(i).length < 5
+          next unless primes[i]
+            (i*i).step(limit, i) do |j|
             primes[j] = nil
+          end
+        else
+          break
         end
       end
       primes.compact.first(7)
