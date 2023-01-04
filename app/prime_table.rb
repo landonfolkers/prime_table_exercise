@@ -1,17 +1,17 @@
 class PrimeTable
     def create_table(number)
-        prime_numbers = get_primes()
+        prime_numbers = get_primes(number)
         p prime_numbers
     end
 
-    def get_primes()
+    def get_primes(number)
       primes = []
       limit = 10000000
       for i in 2 .. limit
         primes[i] = i
       end
       for i in 2 .. Math.sqrt(limit)
-        if primes.compact.first(i).length < 5
+        if primes.compact.first(i).length < number
           next unless primes[i]
             (i*i).step(limit, i) do |j|
             primes[j] = nil
@@ -20,7 +20,7 @@ class PrimeTable
           break
         end
       end
-      primes.compact.first(7)
+      primes.compact.first(number)
     end
 end
 
