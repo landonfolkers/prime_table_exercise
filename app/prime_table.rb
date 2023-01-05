@@ -1,6 +1,6 @@
 class PrimeTable
     def create_table(number)
-        unless number < 1
+        if check_number(number)
             prime_numbers = get_primes(number)
             rows = prime_numbers
             columns = prime_numbers
@@ -14,7 +14,7 @@ class PrimeTable
             print "\n\n"
             end
         else
-            print "Please enter a positive integer"
+            print "Please enter a positive, whole integer."
         end
     end
 
@@ -35,5 +35,12 @@ class PrimeTable
         end
       end
       primes.compact.first(number)
+    end
+
+    def check_number(number)
+        if number > 0 && number % 1 == 0
+            return true
+        end
+        return false
     end
 end
