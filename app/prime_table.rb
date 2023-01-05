@@ -38,7 +38,7 @@ class PrimeTable
     end
 
     def check_number(number)
-        if number > 0 && number % 1 == 0
+        if number > 0
             return true
         end
         return false

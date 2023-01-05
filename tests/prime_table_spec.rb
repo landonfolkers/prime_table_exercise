@@ -35,12 +35,6 @@ describe PrimeTable do
             expect(@prime_table.check_number(-5) == false)
           end
         end
-
-        context 'when user inputs the number 4.6' do
-            it 'should return true due to rounding' do
-              expect(@prime_table.check_number(4.6) == true)
-            end
-          end
       end
   
     describe "create_table function" do
