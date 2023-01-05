@@ -3,7 +3,7 @@
 ## How to run
     Clone the repository onto your own device. Run `bundle install` to install neeeded dependencies. 
 
-    This is a command line app. To run this app, navigate to the file you cloned and type `ruby app/run_create_prime_table.rb int` where `int` is the number of prime numbers you want the app to display in the table. 
+    This is a command line app. To run this app, navigate to the file you cloned and type `ruby app/run_create_prime_table.rb int` where `int` is the number of prime numbers you want the app to display in the table.
 
     To run the rspec tests, make sure you have run `bundle install` to have rspec loaded then run `rspec tests/prime_table_spec.rb` that will run the test file and the output will be shown in the test file. 
 

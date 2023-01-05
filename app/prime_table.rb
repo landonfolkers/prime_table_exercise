@@ -14,7 +14,7 @@ class PrimeTable
             print "\n\n"
             end
         else
-            print "Please enter a positive, whole integer."
+            puts 'Please enter a positive, whole integer.'
         end
     end
 
@@ -38,7 +38,7 @@ class PrimeTable
     end
 
     def check_number(number)
-        if number > 0
+        if number > 0 && number % 1 == 0
             return true
         end
         return false
